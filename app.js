@@ -3,6 +3,7 @@ const paper=document.querySelector(".playerpaper");
 const scissors=document.querySelector(".playerscissors");
 const everything=document.querySelector(".everything");
 const endscreen=document.querySelector(".hiddenWiki");
+const dugme=document.querySelector(".jovanii");
 
 let vod=document.querySelector(".victoryOrDefeat")
 let yresult=document.querySelector(".yourresult");
@@ -43,6 +44,13 @@ function robotRandom() {
         vod.innerHTML="You have won!"
     }
 }
+
+dugme.addEventListener("click",function () {
+    t=0;
+    n=0;
+    everything.style="display:block";
+    endscreen.style="display:none";
+})
 
 rock.addEventListener("click",function () {
     a=1;
